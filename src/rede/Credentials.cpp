@@ -20,12 +20,12 @@ const char* otaPassword = "258096";
 #include "Credentials.h"
 
 // Credenciais do Wi-Fi
-const char* ssid = "Marina";
-const char* password = "1Betania2Doidinhos";
+const char *ssid = "Seu_SSID";
+const char *password = "Sua_Senha";
 
 // Configurações de IP estático
-IPAddress local_IP(192, 168, 15, 90);
-IPAddress gateway(192, 168, 15, 1);
+IPAddress local_IP(192, 168, 0, 0); // Configurar o IP Static
+IPAddress gateway(192, 168, 0, 0);  // Configurar o endereço Gateway conforme o roteador.
 IPAddress subnet(255, 255, 255, 0);
 IPAddress dns1(8, 8, 8, 8);
 IPAddress dns2(8, 8, 4, 4);
