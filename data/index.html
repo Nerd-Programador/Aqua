@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquário Controle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Controle de Aquário</h1>
+    </header>
+
+    <main>
+        <!-- Exibição dos Logs -->
+        <section id="logs">
+            <h2>Logs Recentes</h2>
+            <pre id="log-content">Carregando logs...</pre>
+            <div class="buttons">
+                <button id="clear-logs">Limpar Logs</button>
+                <a href="/download-log" class="download-button" download="logs.txt">Baixar Logs</a>
+            </div>
+        </section>
+
+        <!-- Exibição da Temperatura -->
+        <section id="temperature-section">
+            <h2>Temperatura Atual</h2>
+            <div id="temperature-display">Carregando temperatura...</div>
+        </section>
+
+        <!-- Controle dos LEDs (Lumen) -->
+        <section id="lumen-control">
+            <h2>Controle de Iluminação (Lumen)</h2>
+            <label>
+                <input type="checkbox" id="toggle-lumen"> Ligar/Desligar LEDs
+            </label>
+            <button id="next-effect">Próximo Efeito</button>
+        </section>
+
+        <!-- Controle do Heater -->
+        <section id="heater-control">
+            <h2>Controle do Aquecedor (Heater)</h2>
+            <label for="toggle-heater">Aquecedor:</label>
+            <input type="checkbox" id="toggle-heater"> Ligar/Desligar
+
+            <!-- Timer para o Heater -->
+            <div id="timer-control" style="display: none;">
+                <label for="timer">Timer (em minutos):</label>
+                <input type="number" id="timer" min="1" placeholder="Minutos">
+
+                <div id="countdown">00:00:00</div>
+
+                <button id="confirm-timer">Confirmar</button>
+                <button id="emergency-stop">Parada de Emergência</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Desenvolvido por Nerd-Programador</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
