@@ -2,7 +2,7 @@
 # 💧 Aqua - Sistema de Monitoramento Inteligente de Aquários 🐠
 
 <div style="text-align: center;">
-  <img src="https://files.oaiusercontent.com/file-KXkJl0F9pPnTF7j49AKMrHdc?se=2024-09-22T21%3A17%3A04Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D391ab6e7-c0f9-4f03-8320-2727d1590d75.webp&sig=SBWzSn%2BARWUr9VxjNu/5ASJwv2R%2Bb0p%2Bq8iE1%2BsazNE%3D" alt="Aquarium Banner" width="70%"/>
+  <img src="img/Futuristic aquarium (kinguios).webp" alt="Aquarium Banner" width="70%"/>
 </div>
 
 O **Aqua** é um projeto open-source de automação e monitoramento de aquários, desenvolvido para manter o ambiente aquático seguro e estável para seus habitantes. Utilizando um microcontrolador **ESP8266** *(NodeMCU)*, sensores de temperatura, display OLED e conectividade Wi-Fi, o sistema permite o controle automatizado do aquecedor e a exibição de dados relevantes, garantindo o conforto dos peixes e o controle em tempo real das condições do aquário.
