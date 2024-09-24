@@ -131,11 +131,18 @@ Este projeto foi desenvolvido com o **[PlatformIO](https://platformio.org/)**, u
 4. O display OLED mostrará as leituras da temperatura e a situação do aquecedor.
 
 
-<!-- - **Monitoramento**: O sistema lê a temperatura e controla automaticamente o aquecedor.
-- **Exibição**: A temperatura e o tempo de funcionamento do aquecedor são mostrados no display OLED.
-- **Segurança**: O aquecedor é desligado automaticamente em casos de reinicialização inesperada. -->
+## ⚠️ Problemas Conhecidos
 
----
+Este projeto ainda está em desenvolvimento, e as seguintes questões são conhecidas:
+
+- **Aquecedor preso em "ligado" após reinicialização**: Quando o sistema é reiniciado, o relé do aquecedor pode ficar preso na posição 'On', sendo necessário desligar manualmente em alguns casos.
+- **Oscilações de cor nos LEDs**: Algumas oscilações aleatórias ocorrem durante a execução de efeitos de iluminação com os LEDs.
+- **Falha na comunicação do sistema com o Site**: Algumas funcionalidades do Site disponiveis no site *Aquario.local* não esta enviando ou recebendo dados do sistema.
+<!-- - **Desempenho em monitores OLED**: A exibição no display OLED pode ser lenta ao atualizar os dados do temporizador em determinadas circunstâncias. -->
+<!-- - **Configuração Wi-Fi via WiFiManager**: Em algumas redes, o WiFiManager pode demorar mais do que o esperado para iniciar o ponto de acesso para configuração da rede. -->
+
+Estamos trabalhando para resolver esses problemas em futuras atualizações! Se encontrar outros erros, sinta-se à vontade para [abrir um issue](https://github.com/Nerd-Programador/Aqua/issues).
+
 
 ## 👥 Contribuições
 
