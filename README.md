@@ -136,13 +136,40 @@ Este projeto foi desenvolvido com o **[PlatformIO](https://platformio.org/)**, u
 Este projeto ainda está em desenvolvimento, e as seguintes questões são conhecidas:
 
 - **Aquecedor preso em "ligado" após reinicialização**: Quando o sistema é reiniciado, o relé do aquecedor pode ficar preso na posição 'On', sendo necessário desligar manualmente em alguns casos.
-- **Oscilações de cor nos LEDs**: Algumas oscilações aleatórias ocorrem durante a execução de efeitos de iluminação com os LEDs.
-- **Falha na comunicação do sistema com o Site**: Algumas funcionalidades do Site disponiveis no site *Aquario.local* não esta enviando ou recebendo dados do sistema.
-<!-- - **Desempenho em monitores OLED**: A exibição no display OLED pode ser lenta ao atualizar os dados do temporizador em determinadas circunstâncias. -->
-<!-- - **Configuração Wi-Fi via WiFiManager**: Em algumas redes, o WiFiManager pode demorar mais do que o esperado para iniciar o ponto de acesso para configuração da rede. -->
+- **Oscilações de cor nos LEDs**: Algumas oscilações aleatórias ocorrem durante a execução de efeitos de iluminação com os LEDs, possivelmente devido à interferência ou fonte de alimentação.
+- **Falha na comunicação do sistema com o site**: Algumas funcionalidades disponíveis no site <u>*Aquario.local*</u> não estão enviando ou recebendo dados corretamente, o que impede o controle remoto em tempo real.
 
-Estamos trabalhando para resolver esses problemas em futuras atualizações! Se encontrar outros erros, sinta-se à vontade para [abrir um issue](https://github.com/Nerd-Programador/Aqua/issues).
+---
 
+## 🚀 Implementações Futuras
+
+Estamos planejando as seguintes melhorias e novas funcionalidades para corrigir os problemas atuais e expandir as capacidades do sistema:
+
+- **Reconexão Wi-Fi automática e mais confiável**: Desenvolver um sistema robusto para reconexão automática após queda de energia ou perda de sinal.
+- **Correção do site *Aquario.local***: Implementar uma solução para garantir que todas as funcionalidades do site comuniquem-se corretamente com o sistema, facilitando o monitoramento e controle remoto.
+- **Estabilização das cores dos LEDs**: Trabalhar na melhoria do controle de cores para evitar oscilações e garantir transições suaves nos efeitos de iluminação.
+- **Monitoramento via aplicativo móvel**: Desenvolver uma aplicação mobile que permita controlar o aquecedor, monitorar a temperatura e receber notificações diretamente no celular.
+- **Suporte a mais sensores**: Adicionar compatibilidade para sensores de pH, TDS, e outros parâmetros da água do aquário para monitoramento mais abrangente.
+<span style="color: cyan;">
+   - Modelo: PH-4502C
+   - Modelo: DFRobot-SEN0244
+</span>
+
+---
+
+## 🔧 Funcionalidades em Desenvolvimento
+
+Estamos atualmente trabalhando nas seguintes funcionalidades para melhorar o projeto:
+
+- **Melhoria no comportamento do relé do aquecedor**: Implementar um sistema de fail-safe para garantir que o aquecedor desligue corretamente após reinicializações inesperadas.
+- **Correção do problema de oscilação nos LEDs**: Investigar e corrigir as oscilações aleatórias, possivelmente otimizando a alimentação e o código de controle de efeitos.
+- **Otimização da comunicação do site**: Trabalhar na sincronização correta entre o site e o sistema para garantir a troca confiável de dados em tempo real.
+- **Sistema de configuração Wi-Fi via portal**: Melhorar a interface de configuração via WiFiManager para tornar o processo de conectar o dispositivo à rede mais ágil e confiável.
+- **Persistência de configurações**: Implementar o uso de **LittleFS** para salvar as configurações do usuário (como temperatura alvo e status do sistema), mesmo após reinicializações.
+
+Se você encontrar outros problemas ou tiver sugestões para melhorias, sinta-se à vontade para [abrir um issue](https://github.com/Nerd-Programador/Aqua/issues). Estamos sempre buscando maneiras de tornar o sistema mais confiável e eficiente!
+
+---
 
 ## 👥 Contribuições
 
